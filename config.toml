@@ -1,4 +1,4 @@
-baseurl = "https://billa.netlify.com/"
+baseurl = "https://billa.rbind.io/"
 title = "Manoj Billa"
 theme = "ghostwriter"
 languageCode = "en-us"
@@ -41,19 +41,18 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     shareGooglePlus = false
     shareLinkedIn = true
     dateFormat = "Mon, Jan 2, 2006"
-    highlightJsUrl = ""
-    highlightJsLocalUrl = ""
     exponeaJsUrl = ""
     exponeaTarget = ""
     exponeaToken = ""
     exponeaTrackVisits = false
 
-    
-
     highlightjsVersion = "9.12.0"
     highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
     highlightjsLang = ["r", "yaml", "tex"]
     highlightjsTheme = "atom-one-light"
+	
+	highlightJsUrl = ""
+    highlightJsLocalUrl = ""
 
     MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
     MathJaxVersion = "2.7.5"

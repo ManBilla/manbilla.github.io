@@ -15,7 +15,7 @@ FInally, after much deliberation, I finished building my new website. I Initiall
 
 # Basic instructions:
 1. Choose a theme among the available themes showcased <a href="https://themes.gohugo.io/" target="_blank">here!</a>. Be wary that not all themes have been tested to work with blogdown. Yihui recommends certain [themes](https://bookdown.org/yihui/blogdown/other-themes.html) in his book. I chose the ghostwriter theme because of its simplicity and support in community.
-2. Install hugo, if you are using standalone hugo. Install blogdown package if you are using blogdown. Installing blogdown also installs hugo.
+2. Install hugo, if you are using standalone hugo. Install blogdown package if you are using blogdown. You can do this by using `install.packages('blogdown')` after installing RStudio. Installing blogdown also installs hugo.
 3. Edit the `config.toml` file to personalize your website. You can, for example, add menu options, change social media links, embed google analytics, disqus comments, etc.
 4. Create a new project in a directory of your choice. With this as your working directory, use `blogdown::new_site()` to create a new site. If you don't want to use the default theme, use `theme = "your chosen theme github path"` argument to use a different one.
 5. If you already created a site, use `serve_site()` to serve your site. If you are using standalone hugo, then use `hugo server -D` to serve site and open `http://localhost:1313` to see your site
@@ -27,6 +27,10 @@ After setting a basic website, you can experiment before deploying to web server
 # Personalizing your theme
 
 As described earlier, config.toml can be used to make most of the possible personalizations. Each theme has different levels and kinds of customization. For example, some themes let you change page colors, number of most recent posts, etc while some do not. You can also edit your css/js in `themes/static` folder.
+
+# Deploying
+After finishing your changes, you can deploy your site either in Netlify (recommended), github pages, gitlab pages, etc for free. I chose netlify for now but might change to github pages later just because of the .github.io domain and the flexibility to use project pages from different repositories in my website. For doing any of these, you need to install git and push your files to a github repository. After this, create an account in netlify and follow the steps and after 2 minutes, your site will be live!
+After deploying, netlify assigns your site a random domain. You can customize the subdomain to something of your liking. Your CSS, JS files may fail to load initially. You need to update your new site link in the `baseurl` within `config.toml` document. If you want a free rbind domain, create an issue here: https://github.com/rbind/support/issues
 
 # Testing how different objects embed
 ---
