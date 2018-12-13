@@ -1,4 +1,4 @@
-baseurl = "https://manbilla.github.io/"
+baseurl = "https://billa.netlify.com/"
 title = "Manoj Billa"
 theme = "ghostwriter"
 languageCode = "en-us"
