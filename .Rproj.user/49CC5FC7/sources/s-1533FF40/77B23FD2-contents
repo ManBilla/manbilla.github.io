@@ -1,0 +1,78 @@
+baseurl = "https://manbilla.github.io/"
+title = "Manoj Billa"
+theme = "ghostwriter"
+languageCode = "en-us"
+copyright = "Manoj"
+disqusShortname = "@manbilla"
+googleAnalytics = "UA-52210083-1"
+enableEmoji = true
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+
+[Privacy]
+
+[Privacy.disqus]
+    disable = true
+
+[Privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+    useSessionStorage = false
+
+[Author]
+    name = "Manoj Billa"
+    profile = "https://twitter.com/bmanojreddy9"
+
+[Taxonomies]
+    tag = "tags"
+
+[Params]
+    intro = true
+    favicon = ""
+    headline = "Manoj Billa"
+    description = "Supply Chain, Data Analytics and everything in between"
+    github = "https://github.com/ManBilla"
+    linkedin = "https://linkedin.com/in/manbilla/"
+    twitter = "https://twitter.com/bmanojreddy9"
+    email = "billamr@mail.uc.edu"
+    opengraph = true
+    shareTwitter = true
+    shareFacebook = true
+    shareGooglePlus = false
+    shareLinkedIn = true
+    dateFormat = "Mon, Jan 2, 2006"
+    highlightJsUrl = ""
+    highlightJsLocalUrl = ""
+    exponeaJsUrl = ""
+    exponeaTarget = ""
+    exponeaToken = ""
+    exponeaTrackVisits = false
+
+    
+
+    highlightjsVersion = "9.12.0"
+    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    highlightjsLang = ["r", "yaml", "tex"]
+    highlightjsTheme = "atom-one-light"
+
+    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    MathJaxVersion = "2.7.5"
+
+[params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+
+[Permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "/page/about/"
+    weight = 2
