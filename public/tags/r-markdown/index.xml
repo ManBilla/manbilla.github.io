@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R Markdown on Manoj Billa</title>
-    <link>/tags/r-markdown/</link>
+    <link>https://billa.rbind.io/tags/r-markdown/</link>
     <description>Recent content in R Markdown on Manoj Billa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Manoj</copyright>
     <lastBuildDate>Tue, 11 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://billa.rbind.io/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Setting up my website</title>
-      <link>/2018/12/11/setting-up-my-new-website/</link>
+      <link>https://billa.rbind.io/2018/12/11/setting-up-my-new-website/</link>
       <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/12/11/setting-up-my-new-website/</guid>
+      <guid>https://billa.rbind.io/2018/12/11/setting-up-my-new-website/</guid>
       <description>FInally, after much deliberation, I finished building my new website. I Initially had a basic google sites website showcasing my projects, experience, etc. Then after experimenting with Jekyll, Ghost, Hugo, etc., I finally settled upon Hugo 😄. Then I discovered blogdown and moved my website into that. Yihui has written a pretty comprehensive book on blogdown which is available for free online and you should read that book if you want in-depth understanding of blogdown and hugo.</description>
     </item>
     

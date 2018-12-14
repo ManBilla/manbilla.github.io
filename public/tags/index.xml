@@ -2,76 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Manoj Billa</title>
-    <link>/tags/</link>
+    <link>https://billa.rbind.io/tags/</link>
     <description>Recent content in Tags on Manoj Billa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Manoj</copyright>
     <lastBuildDate>Mon, 10 Oct 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://billa.rbind.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>/tags/development/</link>
+      <link>https://billa.rbind.io/tags/development/</link>
       <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/development/</guid>
+      <guid>https://billa.rbind.io/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Html</title>
-      <link>/tags/html/</link>
+      <link>https://billa.rbind.io/tags/html/</link>
       <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/html/</guid>
+      <guid>https://billa.rbind.io/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markdown</title>
-      <link>/tags/markdown/</link>
+      <link>https://billa.rbind.io/tags/markdown/</link>
       <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/markdown/</guid>
+      <guid>https://billa.rbind.io/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>https://billa.rbind.io/tags/r/</link>
       <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>https://billa.rbind.io/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Markdown</title>
-      <link>/tags/r-markdown/</link>
+      <link>https://billa.rbind.io/tags/r-markdown/</link>
       <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r-markdown/</guid>
+      <guid>https://billa.rbind.io/tags/r-markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sap</title>
-      <link>/tags/sap/</link>
+      <link>https://billa.rbind.io/tags/sap/</link>
       <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/sap/</guid>
+      <guid>https://billa.rbind.io/tags/sap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tableau</title>
-      <link>/tags/tableau/</link>
+      <link>https://billa.rbind.io/tags/tableau/</link>
       <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/tableau/</guid>
+      <guid>https://billa.rbind.io/tags/tableau/</guid>
       <description></description>
     </item>
     
