@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Manoj Billa</title>
-    <link>https://billa.rbind.io/page/</link>
+    <link>/page/</link>
     <description>Recent content in Pages on Manoj Billa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Manoj</copyright>
     <lastBuildDate>Wed, 12 Dec 2018 02:13:50 +0000</lastBuildDate>
     
-	<atom:link href="https://billa.rbind.io/page/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://billa.rbind.io/page/about/</link>
+      <link>/page/about/</link>
       <pubDate>Wed, 12 Dec 2018 02:13:50 +0000</pubDate>
       
-      <guid>https://billa.rbind.io/page/about/</guid>
+      <guid>/page/about/</guid>
       <description>About I am a data enthusiast, interested in Descriptive and Predictive Analytics, Process &amp;amp; Supply Chain Optimization, Machine learning and Data Visualization. With a bachelors in Civil Engineering and a strong Math background, I chose to pursue my Masters in Information Systems at the University of Cincinnati to develop my Technical and Business skills. I started exploring data science field here and acquired many skills via the data Analytics certificate program.</description>
     </item>
     

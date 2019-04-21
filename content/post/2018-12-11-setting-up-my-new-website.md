@@ -18,11 +18,12 @@ FInally, after much deliberation, I finished building my new website. I Initiall
 2. Install hugo, if you are using standalone hugo. Install blogdown package if you are using blogdown. You can do this by using `install.packages('blogdown')` after installing RStudio. Installing blogdown also installs hugo.
 3. Edit the `config.toml` file to personalize your website. You can, for example, add menu options, change social media links, embed google analytics, disqus comments, etc.
 4. Create a new project in a directory of your choice. With this as your working directory, use `blogdown::new_site()` to create a new site. If you don't want to use the default theme, use `theme = "your chosen theme github path"` argument to use a different one.
-5. If you already created a site, use `serve_site()` to serve your site. If you are using standalone hugo, then use `hugo server -D` to serve site and open `http://localhost:1313` to see your site
-6. You can create a new post using 'New post' addin or using `blogdown::new_post()` function. You can also edit your existing files in `content/post` folder. These files can be plain markdown or Rmarkdown (the graphics, etc will be rendered) or html. These files in the `content` folder render into HTML pages which will be in your `public` folder, along with .css, .js, image assets needed to publish your website.
+5. You can create a new post using 'New post' addin or using `blogdown::new_post()` function with the Title, Author, etc as arguments. You can also edit your existing files in `content/post` folder. These files can be plain markdown or Rmarkdown (the graphics, etc will be rendered) or html. These files in the `content` folder render into HTML pages which will be in your `public` folder, along with .css, .js, image assets needed to publish your website.
+6. After creating your post, use the function `blogdown::serve_site()` to serve the site. You can see the website in "Viewer" section of RStudio. the function also gives you a local web address (for example: http://127.0.0.1:4321) where you can see your website in the browser. Do not knit the markdown file. If you do, just use serve_site() again after deleting the knitted html files from the content & public folders.
+![rstudio](/img/RStudio.PNG)
+(If you are using standalone hugo instead of blogdown, then use `hugo server -D` to serve site and open `http://localhost:1313` to see your site)
 
-
-After setting a basic website, you can experiment before deploying to web server. Hugo has livereload functionality, by which you can see your changes updated in the locally hosted webpage almost instantly. :rocket:
+After setting up a basic website, you can experiment before deploying to web server. Hugo has livereload functionality, by which you can see your changes updated in the locally hosted webpage instantaneously. :rocket:
 
 # Personalizing your theme
 
