@@ -167,6 +167,15 @@ GROUP BY s.id, s.name
 HAVING COUNT(*) > 5 
 ORDER BY num_accounts;
 ```
+## UNION
+The union operator combines results from 2 SELECT statements into a single result set. Both the select statements should return same number of columns and respective columns should have same data type.
+```
+SELECT SURNAME
+FROM CD.MEMBERS
+UNION
+SELECT NAME
+FROM CD.FACILITIES;
+```
 
 ## DATE_TRUNC & DATE_PART
 Format of dates in SQL: YYYY-MM-DD HH:MI:SS  
