@@ -17,4 +17,4 @@ menu = "main"
 
 ## Vist manojbilla.com to see some of my old work
 
-This site was built using google pages <a href="https://www.manojbilla.com" target="_blank">Link!</a>
+<a href="https://www.manojbilla.com" target="_blank">This site was built using google pages!</a>
