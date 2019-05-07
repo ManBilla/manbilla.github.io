@@ -33,6 +33,8 @@ As described earlier, config.toml can be used to make most of the possible perso
 After finishing your changes, you can deploy your site either in Netlify (recommended), github pages, gitlab pages, etc for free. I chose netlify for now but might change to github pages later just because of the .github.io domain and the flexibility to use project pages from different repositories in my website. For doing any of these, you need to install git and push your files to a github repository. After this, create an account in netlify and follow the steps and after 2 minutes, your site will be live!
 After deploying, netlify assigns your site a random domain. You can customize the subdomain to something of your liking. Your CSS, JS files may fail to load initially. You need to update your new site link in the `baseurl` within `config.toml` document. If you want a free rbind domain, create an issue here: https://github.com/rbind/support/issues
 
+Best part about this is that if there are minor corrections, we can just make them in github directly and site will be updated.
+
 # Testing how different objects embed
 ---
 #### Tables & quotes
