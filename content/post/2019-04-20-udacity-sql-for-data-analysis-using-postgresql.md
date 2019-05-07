@@ -23,7 +23,10 @@ Businesses like relational databases because:
 3. Easy Access: SQL queries can be used to query data easily. Data can be stored in different tables and normalized to maintain integrity & consistency.
 
 SQL is not case sensitive  
-If using a non-numeric data with an operator, must put the data in single quotes
+If using a non-numeric data with an operator, must put the data in single quotes. Double quotes are for names of tables or fields. Sometimes You can omit them. The single quotes are for string constants.
+```
+select * from "employee" where "employee_name"='elina';
+```
 
 | Operators                                 |  Symbol    |
 | ------------------------------------------|:----------:|
@@ -167,7 +170,13 @@ ORDER BY num_accounts;
 
 ## DATE_TRUNC & DATE_PART
 Format of dates in SQL: YYYY-MM-DD HH:MI:SS  
-DATE_TRUNC allows you to truncate your date to a particular part of your date-time column like day, month or year.  
+DATE_TRUNC allows you to truncate your date to a particular precision. For example: 
+
+```
+date_trunc('hour', timestamp '2001-02-16 20:38:40')
+Will result in
+2001-02-16 20:00:00
+```
 DATE_PART can be useful for pulling a specific portion of a date, but notice pulling month or day of the week means that the years may no longer be in order.
 
 ```
@@ -180,11 +189,12 @@ SELECT DATE_PART('dow', occurred_at) as day_of_week, SUM(total) as total_qty
 FROM orders 
 GROUP BY 1 
 ORDER BY 2 DESC; 
-
-SELECT DATE_TRUNC('month', o.occurred_at) ord_date, SUM(o.gloss_amt_usd) tot_spent 
-FROM orders o JOIN accounts a 
-ON a.id = o.account_id 
-GROUP BY 1
+```
+PGSQL automatically casts the date to its full timestamp in below example
+```
+select memid, surname, firstname, joindate 
+	from cd.members
+	where joindate >= '2012-09-01';  
 ```
 ## CASE
 CASE statement always goes in the SELECT clause.  
