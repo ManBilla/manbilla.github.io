@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Manoj</copyright>
-    <lastBuildDate>Sat, 20 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Udacity Python for Data Analysis</title>
+      <link>/2019/05/15/udacity-python-for-data-analysis/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/05/15/udacity-python-for-data-analysis/</guid>
+      <description>These are my notes from the Udacity Python Course which I did as part of the Bertelsmann data science scholarship. This course covers basic Python and several Data Analysis packages of Python.
+Python Basics  Python is case sensitive Variables can&amp;rsquo;t start with a number. They can&amp;rsquo;t have space. You can&amp;rsquo;t use reserved words like False, continue, if, etc too. Method behaves like a function but the methods are called using a dot notation There are two types of errors:Exceptions, Syntax</description>
+    </item>
     
     <item>
       <title>Udacity SQL for Data Analysis using PostgreSQL</title>
@@ -37,7 +47,7 @@ Basic SQL Entity Relationship Diagram (ER Diagram) shows how data is structured 
       <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>/2016/10/10/old-website/</guid>
-      <description>Vist manojbilla.com to see some of my old work This site was built using google pages Link!</description>
+      <description>Vist manojbilla.com to see some of my old work This site was built using google pages!</description>
     </item>
     
   </channel>

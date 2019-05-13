@@ -7,22 +7,58 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Manoj</copyright>
-    <lastBuildDate>Mon, 10 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Development</title>
-      <link>/tags/development/</link>
-      <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate>
+      <title>Programming</title>
+      <link>/tags/programming/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/development/</guid>
+      <guid>/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Html</title>
+      <title>Python</title>
+      <link>/tags/python/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>/tags/tutorial/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Udacity</title>
+      <link>/tags/udacity/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/udacity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>/tags/sql/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTML</title>
       <link>/tags/html/</link>
       <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
       
@@ -40,15 +76,6 @@
     </item>
     
     <item>
-      <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>R Markdown</title>
       <link>/tags/r-markdown/</link>
       <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
@@ -58,7 +85,7 @@
     </item>
     
     <item>
-      <title>Sap</title>
+      <title>SAP</title>
       <link>/tags/sap/</link>
       <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate>
       
@@ -67,38 +94,29 @@
     </item>
     
     <item>
-      <title>Sql</title>
-      <link>/tags/sql/</link>
-      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      <title>development</title>
+      <link>/tags/development/</link>
+      <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/sql/</guid>
+      <guid>/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Tableau</title>
+      <title>r</title>
+      <link>/tags/r/</link>
+      <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tableau</title>
       <link>/tags/tableau/</link>
       <pubDate>Mon, 10 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>/tags/tableau/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorial</title>
-      <link>/tags/tutorial/</link>
-      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Udacity</title>
-      <link>/tags/udacity/</link>
-      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/udacity/</guid>
       <description></description>
     </item>
     

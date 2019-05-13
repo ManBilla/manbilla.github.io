@@ -97,13 +97,16 @@ AND a.sales_rep_id = 322
 
 # SQL Aggregations
 ## Count
-In the below queries, 1st query counts all rows while 2nd query counts only the rows with ID as not null.
-```
-SELECT COUNT(*) as order_count 
-FROM accounts; 
 
+```
+-- Below Counts number of rows from accounts
+SELECT COUNT(*) 
+
+-- Below counts the number of non-null id's 
 SELECT COUNT(accounts.id) 
-FROM accounts;
+
+--Below counts the number of different id's
+SELECT COUNT(DISTINCT accounts.id)
 ```
 
 ## Sum
@@ -167,6 +170,31 @@ GROUP BY s.id, s.name
 HAVING COUNT(*) > 5 
 ORDER BY num_accounts;
 ```
+> Also, you cannot filter on a calculated column using WHERE clause. You need to write the formula again
+For example: Below first query is wrong. The second one is correct. Similar format is to be used for filtering on aggregates with HAVING
+```
+SELECT MEMBER, 
+    CASE
+        WHEN MEMID = 0 THEN GUESTCOST*SLOTS
+        ELSE MEMBERCOST*SLOTS
+    END AS COST
+FROM T1
+WHERE COST > 30
+-- Above query will return an error. Below format is correct. Instead, you can write everything inside a subquery & use SELECT* with a filter outside this subquery too!
+ 
+ SELECT MEMBER, 
+    CASE 
+        WHEN MEMID = 0 THEN GUESTCOST*SLOTS
+        ELSE MEMBERCOST*SLOTS
+    END AS COST
+    FROM T1
+    WHERE
+        ((MEMID = 0 AND GUESTCOST*SLOTS > 30) OR
+        (MEMID != 0 AND MEMBERCOST*SLOTS > 30)
+);
+ 
+```
+
 ## UNION
 The union operator combines results from 2 SELECT statements into a single result set. Both the select statements should return same number of columns and respective columns should have same data type.
 ```
@@ -236,6 +264,7 @@ p.s. Be wary of the apostrophe and always use the one present on English Keyboar
 SELECT * FROM accounts 
 WHERE primary_poc IS NULL
 '''
+> Create Aliases when you create a new column by aggregating. For this alias, if you have 2 words, use "  " instead of ' '. Ex: "First Name".
 
 * Aggregators only aggregate vertically - the values of a column. If you want to perform a calculation across rows, you can do this with simple arithmetic
 
@@ -248,6 +277,8 @@ Inner query will run first & the outer query will run across the result set crea
 If the subquery is returning a single value, you might use that value in a logical statement like WHERE, HAVING, or even SELECT - the value could be nested within a CASE statement.  
 Most conditional logic will work with Subqueries returning a single value. IN is the only type of conditional logic that will work if Subquery returns multiple results.  
 You should not include an alias when you write a subquery in a conditional statement. This is because the subquery is treated as an individual value (or set of values in the IN) rather than as a table.
+
+
 ```
 SELECT channel, AVG(events) AS average_events 
 FROM
@@ -266,9 +297,20 @@ WHERE DATE_TRUNC('month', occurred_at) =
     )
 ;
 ```
+Sometimes, we can run subquery for each row of the main select statement. These are called *correlated subqueries*
+```
+SELECT distinct mems.name member,
+    (SELECT recs.name recommender
+        FROM members recs
+        WHERE mems.recommendedby = recs.memid
+    )
+    FROM members mems
+ORDER BY member;
+```
+In above query, for every row, the subquery matches the recommender key with the member key. Ie, it uses information from the outer select statement.
 
 ## Common Table Expression
-WITH statement is often called a Common Table Expression or CTE. Subqueries can make your queries lengthy. CTEs can help break the query into separate components for better readability.  
+WITH statement is often called a Common Table Expression or CTE. Subqueries can make your queries lengthy. CTEs can help break the query into separate "views" for better readability.  
 You can have as many CTEs as you want. They need to be defined at the beginning of query. Each CTE gets an alias.
 If you have a CTE/subquery that takes a long time to run, you can run it separately & write it back to the DB as its own table.
 
@@ -373,6 +415,35 @@ SUBSTR function extracts a substring from a string (starting at any position).
 ```
 SUBSTR(string, start, length)
 ```
+# Grouping Sets
+The `ROLLUP` operator can be used to produce a hierarchy of agrregations in the order passed to it.  
+Ex: ROLLUP(id, month) will output aggregations at these levels: (id, month), (id), ()
 
+The `CUBE` operator will produce all possible hierarchies  
+EX: CUBE(id,month) will output at these levels: (id,month), (id), (month), ()
+
+
+# Window Functions
+These functions operate on the result set of our query after all the aggregations & WHERE filtering is done.
+
+Example:
+```
+select count(*) over(partition by date_trunc('month',joindate)),
+	name
+	from members
+-- In above query, we are partitioning the data by month, counting the number of members per month and filling it in a new column 'count'. Instead, if we use below query
+select count(*) over(partition by date_trunc('month',joindate) order by joindate)
+-- In above, partition even splits it within a month, into further subdivisions per joindate and gives the order in which members joined, each month.
+```
+
+ORDER:
+SELECT  
+FROM  
+WHERE  
+GROUP BY  
+Window Functions  
+HAVING  
+ORDER BY  
+LIMIT  
 
 
